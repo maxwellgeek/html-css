@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Midias em HTML5</title>
+    </head>
+    <body>
+        <h1>Imagem Dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+        
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+
+            <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">    
+            <img src="imagens/foto-p.png" alt="Imagem Flexixel">
+            <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">         
+
+            <img src="imagens/foto-m.png" alt="Imagem Flexivel">
+            <source media="(min-width: 1050px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width:750px)" srcset="imagens/foto-g.png" type="image/png">
+
+            <img src="imagens/foto-m.png" alt="Imagem flexivel">
+            <source media="(max-width:750px)" srcset="imagens/foto-g.png" type="image/png">
+            <source media="(min-width:1050px)" srcset="imagens/foto-p.png" type="image/png">  
+        </picture>
+        <h1>Reproduzindo Áudio</h1>
+        <h2>Vamos aprender a reproduzir áudios em HTML5.</h2>
+        <h3>Episódio 33 - GuanaCast</h3>        
+        <audio preload="metadata" controls>
+            <source src="audio/guanacast-33.mp3" type="audio/mpeg">
+        </audio>
+        <h3>Happy Mistake - You Tube Studio</h3>
+        <audio preload="metadata" controls>
+            <source src="audio/happy-mistake.mp3" type="audio/mpeg">
+        </audio>
+
+        <h1>Reproduzindo Video em meu proprio servidor</h1>
+        <h2>Vamos aprender a reproduzir video no HTML5</h2>
+        <h3>Video da Praia - Pexels</h3>
+        <video preload="metadata" width="500" poster="imagens/foto-g.png" controls>
+            <source src="video/video-720p.mp4" type="video/mp4">
+        </video>
+
+        <h1>Reproduzindo video do YouTube</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ugYYXAW_vy8?si=Q9odbdzbOz77BxFt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <h1>Reproduzindo video do Vimeo</h1>
+        <iframe src="https://player.vimeo.com/video/406028701?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="322" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Tecnologia ::Petrobrás"></iframe>
+
+
+    </body>
+</html>
