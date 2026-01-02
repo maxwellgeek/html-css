@@ -98,5 +98,6 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 2vh;
+    font-size: 2vw;
 }
