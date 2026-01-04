@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 400px;
+    border-collapse: collapse;
+    
+}
+
+thead{
+    background-color: gray;
+    color: white;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#meio{
+    background-color: gray;
+    color: white;
+}
+#rodape{
+    background-color: gray;
+    color: white;
+}
